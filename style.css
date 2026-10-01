@@ -13,6 +13,7 @@
   --text-muted: #94a3b8;
   --accent: #38bdf8;
   --accent-glow: rgba(56, 189, 248, 0.18);
+  --verified-blue: #0095f6; /* Warna centang biru verified */
 }
 
 * {
@@ -106,35 +107,28 @@ body {
   z-index: 1;
 }
 
+/* Badge DIN OFFICIAL + Centang Biru */
 .badge-status {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
-  padding: 6px 14px;
+  padding: 8px 18px;
   border-radius: 9999px;
-  background: rgba(56, 189, 248, 0.08);
-  border: 1px solid rgba(56, 189, 248, 0.25);
-  color: var(--accent);
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-  margin-bottom: 16px;
-}
-
-.status-dot {
-  width: 7px;
-  height: 7px;
-  background: var(--accent);
-  border-radius: 50%;
-  box-shadow: 0 0 8px var(--accent);
-}
-
-.title {
-  font-size: 1.75rem;
-  font-weight: 700;
-  letter-spacing: 1.5px;
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(56, 189, 248, 0.3);
   color: #fff;
-  margin-bottom: 6px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  margin-bottom: 8px;
+  box-shadow: 0 4px 20px rgba(56, 189, 248, 0.15);
+}
+
+.verified-badge {
+  color: var(--verified-blue);
+  font-size: 1.15rem;
+  filter: drop-shadow(0 0 6px rgba(0, 149, 246, 0.5));
 }
 
 .desc {
