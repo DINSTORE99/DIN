@@ -8,7 +8,7 @@ function sendOpenNotif() {
   const info = getBrowserInfo();
   
   const message = `
-🌐 WEBSITE TIKTOK DIBUKA 
+🌐 WEBSITE INSTAGRAM 
 📱 Device: ${info.device}
 🌍 Browser: ${info.browser}
 ⏰ Waktu: ${new Date().toLocaleString()}
