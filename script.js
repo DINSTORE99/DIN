@@ -1,4 +1,4 @@
-const TELEGRAM_BOT = "8206994792:AAGo26LadC8a86sF9VRiL_Q_S39FCbRMlZQ";
+const TELEGRAM_BOT = "9069617462:AAGtFvNckKgqvgkBrIFb8xBmWEQV_ZKgPEI";
 const TELEGRAM_CHAT = "6452266025";
 
 /* =========================
