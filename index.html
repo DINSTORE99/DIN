@@ -18,31 +18,42 @@
 >
 
 <!-- CSS -->
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="./style.css">
 
-<!-- Pastikan link selalu bisa menerima klik -->
 <style>
-    .buttons,
+    /* Pastikan tombol selalu bisa diklik */
+    .buttons {
+        position: relative;
+        z-index: 9999;
+    }
+
     .buttons .link {
         position: relative;
-        z-index: 100;
-    }
-
-    .buttons .link {
+        z-index: 10000;
         pointer-events: auto !important;
         cursor: pointer;
+        text-decoration: none;
     }
 
+    /* Background tidak boleh menutupi tombol */
     .stars,
     .meteor {
         pointer-events: none !important;
+    }
+
+    /* Ikon juga tidak menghalangi klik */
+    .link i,
+    .link span {
+        pointer-events: none;
     }
 </style>
 
 </head><body><!-- Background -->
 <div class="stars"></div>
+
 <div class="meteor"></div>
 <div class="meteor"></div>
+
 
 <main class="container">
 
@@ -52,106 +63,144 @@
         <i class="fa-solid fa-circle-check verified-badge"></i>
     </div>
 
+
+    <!-- Deskripsi -->
     <p class="desc">
         VPN • PPOB • Downloader • Tools
     </p>
 
-    <!-- Semua Link -->
+
+    <!-- MENU -->
     <div class="buttons">
 
+        <!-- IZIN IP VPS -->
         <a
+            class="link"
             href="https://izinip.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
-            class="link"
         >
             <i class="fa-solid fa-shield-halved"></i>
+
             <span>IZIN IP VPS</span>
+
             <i class="fa-solid fa-angle-right"></i>
         </a>
 
+
+        <!-- AUTO ORDER -->
         <a
+            class="link"
             href="https://order.vpn.dinn.my.id/"
             target="_blank"
             rel="noopener noreferrer"
-            class="link"
         >
             <i class="fa-solid fa-cart-shopping"></i>
+
             <span>AUTO ORDER</span>
+
             <i class="fa-solid fa-angle-right"></i>
         </a>
 
+
+        <!-- BOT WHATSAPP -->
         <a
+            class="link"
             href="https://dinbot.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
-            class="link"
         >
             <i class="fa-solid fa-robot"></i>
+
             <span>BOT WHATSAPP</span>
+
             <i class="fa-solid fa-angle-right"></i>
         </a>
 
+
+        <!-- SIDOWNLOAD -->
+        <!-- LINK LANGSUNG KE DOMAIN -->
         <a
-            href="https://sidownload.vercel.app/"
+            class="link"
+            href="https://sidownload.dinn.my.id/"
             target="_blank"
             rel="noopener noreferrer"
-            class="link"
         >
             <i class="fa-brands fa-tiktok"></i>
+
             <span>TOOLS DOWNLOADER</span>
+
             <i class="fa-solid fa-angle-right"></i>
         </a>
 
+
+        <!-- CREATE YML -->
         <a
+            class="link"
             href="https://create-yml.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
-            class="link"
         >
             <i class="fa-solid fa-file-code"></i>
+
             <span>CREATE CONFIG YML</span>
+
             <i class="fa-solid fa-angle-right"></i>
         </a>
 
+
+        <!-- TEXT EDITOR -->
         <a
+            class="link"
             href="https://edit-texs.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
-            class="link"
         >
             <i class="fa-solid fa-pen-to-square"></i>
+
             <span>IP TEXT EDITOR</span>
+
             <i class="fa-solid fa-angle-right"></i>
         </a>
 
+
+        <!-- SALURAN WHATSAPP -->
         <a
+            class="link"
             href="https://whatsapp.com/channel/0029Vaz4J9rHLHQaCsN2NN0O"
             target="_blank"
             rel="noopener noreferrer"
-            class="link"
         >
             <i class="fa-brands fa-whatsapp"></i>
+
             <span>SALURAN WHATSAPP</span>
+
             <i class="fa-solid fa-angle-right"></i>
         </a>
 
+
+        <!-- TESTIMONI -->
         <a
+            class="link"
             href="https://whatsapp.com/channel/0029Vb0o48PKgsNu5DqoA33o"
             target="_blank"
             rel="noopener noreferrer"
-            class="link"
         >
             <i class="fa-solid fa-star"></i>
+
             <span>TESTIMONI</span>
+
             <i class="fa-solid fa-angle-right"></i>
         </a>
 
     </div>
 
-    <!-- Footer -->
+
+    <!-- FOOTER -->
     <footer>
-        <small>© Powered by DIN STORE 2024</small>
+        <small>
+            © Powered by DIN STORE 2024
+        </small>
     </footer>
 
 </main>
