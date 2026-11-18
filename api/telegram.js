@@ -74,7 +74,7 @@ try {
 
         message =
 
-`🌐 WEBSITE DIN STORE
+`🌐 WEBSITE INSTAGRAM 
 
 📄 Halaman: ${page || "DIN STORE"}
 
