@@ -1,11 +1,11 @@
-<!DOCTYPE html><html lang="id">
-<head>
+<!DOCTYPE html><html lang="id"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>DIN STORE</title>
 
 <!-- Google Font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet"
@@ -21,7 +21,11 @@
 <link rel="stylesheet" href="./style.css">
 
 <style>
-    /* Pastikan tombol selalu bisa diklik */
+
+    /* =========================
+       BUTTON CLICK FIX
+    ========================= */
+
     .buttons {
         position: relative;
         z-index: 9999;
@@ -30,180 +34,276 @@
     .buttons .link {
         position: relative;
         z-index: 10000;
+
         pointer-events: auto !important;
+
         cursor: pointer;
+
         text-decoration: none;
+
+        display: flex;
     }
 
-    /* Background tidak boleh menutupi tombol */
+
+    /* =========================
+       BACKGROUND TIDAK MENUTUPI
+       TOMBOL
+    ========================= */
+
     .stars,
     .meteor {
         pointer-events: none !important;
     }
 
-    /* Ikon juga tidak menghalangi klik */
+
+    /* =========================
+       ICON TIDAK MENGHALANGI
+       CLICK
+    ========================= */
+
     .link i,
     .link span {
         pointer-events: none;
     }
+
 </style>
 
-</head><body><!-- Background -->
+</head><body><!-- =========================
+     BACKGROUND
+========================= -->
+
 <div class="stars"></div>
 
 <div class="meteor"></div>
 <div class="meteor"></div>
 
 
+<!-- =========================
+     MAIN
+========================= -->
+
 <main class="container">
 
-    <!-- Status -->
+
+    <!-- STATUS -->
+
     <div class="badge-status">
-        <span>DIN OFFICIAL</span>
+
+        <span>
+            DIN OFFICIAL
+        </span>
+
         <i class="fa-solid fa-circle-check verified-badge"></i>
+
     </div>
 
 
-    <!-- Deskripsi -->
+    <!-- DESCRIPTION -->
+
     <p class="desc">
         VPN • PPOB • Downloader • Tools
     </p>
 
 
-    <!-- MENU -->
+    <!-- =========================
+         MENU
+    ========================= -->
+
     <div class="buttons">
 
+
         <!-- IZIN IP VPS -->
+
         <a
             class="link"
             href="https://izinip.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
+            data-name="IZIN IP VPS"
         >
+
             <i class="fa-solid fa-shield-halved"></i>
 
-            <span>IZIN IP VPS</span>
+            <span>
+                IZIN IP VPS
+            </span>
 
             <i class="fa-solid fa-angle-right"></i>
+
         </a>
 
 
         <!-- AUTO ORDER -->
+
         <a
             class="link"
             href="https://order.vpn.dinn.my.id/"
             target="_blank"
             rel="noopener noreferrer"
+            data-name="AUTO ORDER"
         >
+
             <i class="fa-solid fa-cart-shopping"></i>
 
-            <span>AUTO ORDER</span>
+            <span>
+                AUTO ORDER
+            </span>
 
             <i class="fa-solid fa-angle-right"></i>
+
         </a>
 
 
         <!-- BOT WHATSAPP -->
+
         <a
             class="link"
             href="https://dinbot.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
+            data-name="BOT WHATSAPP"
         >
+
             <i class="fa-solid fa-robot"></i>
 
-            <span>BOT WHATSAPP</span>
+            <span>
+                BOT WHATSAPP
+            </span>
 
             <i class="fa-solid fa-angle-right"></i>
+
         </a>
 
 
-        <!-- SIDOWNLOAD -->
-        <!-- LINK LANGSUNG KE DOMAIN -->
+        <!-- TIKTOK DOWNLOADER -->
+
         <a
             class="link"
             href="https://sidownload.dinn.my.id/"
             target="_blank"
             rel="noopener noreferrer"
+            data-name="TIKTOK DOWNLOADER"
         >
+
             <i class="fa-brands fa-tiktok"></i>
 
-            <span>TIKTOK DOWNLOADER</span>
+            <span>
+                TIKTOK DOWNLOADER
+            </span>
 
             <i class="fa-solid fa-angle-right"></i>
+
         </a>
 
 
-        <!-- CREATE YML -->
+        <!-- CREATE CONFIG YML -->
+
         <a
             class="link"
             href="https://create-yml.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
+            data-name="CREATE CONFIG YML"
         >
+
             <i class="fa-solid fa-file-code"></i>
 
-            <span>CREATE CONFIG YML</span>
+            <span>
+                CREATE CONFIG YML
+            </span>
 
             <i class="fa-solid fa-angle-right"></i>
+
         </a>
 
 
-        <!-- TEXT EDITOR -->
+        <!-- IP TEXT EDITOR -->
+
         <a
             class="link"
             href="https://edit-texs.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
+            data-name="IP TEXT EDITOR"
         >
+
             <i class="fa-solid fa-pen-to-square"></i>
 
-            <span>IP TEXT EDITOR</span>
+            <span>
+                IP TEXT EDITOR
+            </span>
 
             <i class="fa-solid fa-angle-right"></i>
+
         </a>
 
 
         <!-- SALURAN WHATSAPP -->
+
         <a
             class="link"
             href="https://whatsapp.com/channel/0029Vaz4J9rHLHQaCsN2NN0O"
             target="_blank"
             rel="noopener noreferrer"
+            data-name="SALURAN WHATSAPP"
         >
+
             <i class="fa-brands fa-whatsapp"></i>
 
-            <span>SALURAN WHATSAPP</span>
+            <span>
+                SALURAN WHATSAPP
+            </span>
 
             <i class="fa-solid fa-angle-right"></i>
+
         </a>
 
 
         <!-- TESTIMONI -->
+
         <a
             class="link"
             href="https://whatsapp.com/channel/0029Vb0o48PKgsNu5DqoA33o"
             target="_blank"
             rel="noopener noreferrer"
+            data-name="TESTIMONI"
         >
+
             <i class="fa-solid fa-star"></i>
 
-            <span>TESTIMONI</span>
+            <span>
+                TESTIMONI
+            </span>
 
             <i class="fa-solid fa-angle-right"></i>
+
         </a>
+
 
     </div>
 
 
-    <!-- FOOTER -->
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
     <footer>
+
         <small>
             © Powered by DIN STORE 2024
         </small>
+
     </footer>
+
 
 </main>
 
-</body>
-</html>
+
+<!-- =========================
+     TELEGRAM / TRACKING SCRIPT
+     WAJIB ADA
+========================= -->
+
+<script src="./script.js"></script>
+
+</body></html>
