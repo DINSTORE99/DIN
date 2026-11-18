@@ -1,101 +1,160 @@
-<!DOCTYPE html>
-<html lang="id">
+<!DOCTYPE html><html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DIN STORE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>DIN STORE</title>
 
-    <!-- Font Google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+>
 
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<!-- Font Awesome -->
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+>
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
-</head>
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
 
-<body>
+<!-- Pastikan link selalu bisa menerima klik -->
+<style>
+    .buttons,
+    .buttons .link {
+        position: relative;
+        z-index: 100;
+    }
 
-    <!-- Background Accents -->
-    <div class="stars"></div>
-    <div class="meteor"></div>
-    <div class="meteor"></div>
+    .buttons .link {
+        pointer-events: auto !important;
+        cursor: pointer;
+    }
 
-    <div class="container">
+    .stars,
+    .meteor {
+        pointer-events: none !important;
+    }
+</style>
 
-        <!-- Status Pill Top dengan Centang Biru -->
-        <div class="badge-status">
-            <span>DIN OFFICIAL</span>
-            <i class="fa-solid fa-circle-check verified-badge"></i>
-        </div>
+</head><body><!-- Background -->
+<div class="stars"></div>
+<div class="meteor"></div>
+<div class="meteor"></div>
 
-        <p class="desc">
-            VPN • PPOB • Downloader • Tools
-        </p>
+<main class="container">
 
-        <!-- Button Links -->
-        <div class="buttons">
+    <!-- Status -->
+    <div class="badge-status">
+        <span>DIN OFFICIAL</span>
+        <i class="fa-solid fa-circle-check verified-badge"></i>
+    </div>
 
-            <!-- Menu Baru: Izin IP -->
-            <a href="https://izinip.vercel.app/" target="_blank" class="link">
-                <i class="fa-solid fa-shield-halved"></i>
-                <span>IZIN IP VPS</span>
-                <i class="fa-solid fa-angle-right"></i>
-            </a>
+    <p class="desc">
+        VPN • PPOB • Downloader • Tools
+    </p>
 
-            <a href="https://order.vpn.dinn.my.id/" target="_blank" class="link">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <span>AUTO ORDER</span>
-                <i class="fa-solid fa-angle-right"></i>
-            </a>
+    <!-- Semua Link -->
+    <div class="buttons">
 
-            <a href="https://dinbot.vercel.app/" target="_blank" class="link">
-                <i class="fa-solid fa-robot"></i>
-                <span>BOT WHATSAPP</span>
-                <i class="fa-solid fa-angle-right"></i>
-            </a>
+        <a
+            href="https://izinip.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+        >
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>IZIN IP VPS</span>
+            <i class="fa-solid fa-angle-right"></i>
+        </a>
 
-            <a href="https://sidownload.vercel.app/" target="_blank" class="link">
-                <i class="fa-brands fa-tiktok"></i>
-                <span>TOOLS DOWNLOADER</span>
-                <i class="fa-solid fa-angle-right"></i>
-            </a>
+        <a
+            href="https://order.vpn.dinn.my.id/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+        >
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>AUTO ORDER</span>
+            <i class="fa-solid fa-angle-right"></i>
+        </a>
 
-            <a href="https://create-yml.vercel.app/" target="_blank" class="link">
-                <i class="fa-solid fa-file-code"></i>
-                <span>CREATE CONFIG YML</span>
-                <i class="fa-solid fa-angle-right"></i>
-            </a>
+        <a
+            href="https://dinbot.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+        >
+            <i class="fa-solid fa-robot"></i>
+            <span>BOT WHATSAPP</span>
+            <i class="fa-solid fa-angle-right"></i>
+        </a>
 
-            <a href="https://edit-texs.vercel.app/" target="_blank" class="link">
-                <i class="fa-solid fa-pen-to-square"></i>
-                <span>IP TEXT EDITOR</span>
-                <i class="fa-solid fa-angle-right"></i>
-            </a>
+        <a
+            href="https://sidownload.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+        >
+            <i class="fa-brands fa-tiktok"></i>
+            <span>TOOLS DOWNLOADER</span>
+            <i class="fa-solid fa-angle-right"></i>
+        </a>
 
-            <a href="https://whatsapp.com/channel/0029Vaz4J9rHLHQaCsN2NN0O" target="_blank" class="link">
-                <i class="fa-brands fa-whatsapp"></i>
-                <span>SALURAN WHATSAPP</span>
-                <i class="fa-solid fa-angle-right"></i>
-            </a>
+        <a
+            href="https://create-yml.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+        >
+            <i class="fa-solid fa-file-code"></i>
+            <span>CREATE CONFIG YML</span>
+            <i class="fa-solid fa-angle-right"></i>
+        </a>
 
-            <a href="https://whatsapp.com/channel/0029Vb0o48PKgsNu5DqoA33o" target="_blank" class="link">
-                <i class="fa-solid fa-star"></i>
-                <span>TESTIMONI</span>
-                <i class="fa-solid fa-angle-right"></i>
-            </a>
+        <a
+            href="https://edit-texs.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+        >
+            <i class="fa-solid fa-pen-to-square"></i>
+            <span>IP TEXT EDITOR</span>
+            <i class="fa-solid fa-angle-right"></i>
+        </a>
 
-        </div>
+        <a
+            href="https://whatsapp.com/channel/0029Vaz4J9rHLHQaCsN2NN0O"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+        >
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>SALURAN WHATSAPP</span>
+            <i class="fa-solid fa-angle-right"></i>
+        </a>
 
-        <!-- Footer -->
-        <footer>
-            <small>© Powered by DIN STORE 2024</small>
-        </footer>
+        <a
+            href="https://whatsapp.com/channel/0029Vb0o48PKgsNu5DqoA33o"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+        >
+            <i class="fa-solid fa-star"></i>
+            <span>TESTIMONI</span>
+            <i class="fa-solid fa-angle-right"></i>
+        </a>
 
     </div>
+
+    <!-- Footer -->
+    <footer>
+        <small>© Powered by DIN STORE 2024</small>
+    </footer>
+
+</main>
 
 </body>
 </html>
